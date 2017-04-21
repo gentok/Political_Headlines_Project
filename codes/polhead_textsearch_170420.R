@@ -18,7 +18,7 @@ rm(list=ls())
 
 ## Check Working Directory, and if it is not the location of THIS file, fix it.
 #getwd()
-setwd("C:/GoogleDrive/Projects/Political Headlines/Political_Headlines_Project/codes")
+setwd("C:/GoogleDrive/Projects/Political_Headlines/Political_Headlines_Project/codes")
 
 ##########
 ## Data ##

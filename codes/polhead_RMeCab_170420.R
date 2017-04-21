@@ -15,7 +15,7 @@ library(RMeCab);library(descr)
 
 ## Check Working Directory, and if it is not the location of THIS file, fix it.
 #getwd()
-setwd("C:/GoogleDrive/Projects/Political Headlines/Political_Headlines_Project/codes")
+setwd("C:/GoogleDrive/Projects/Political_Headlines/Political_Headlines_Project/codes")
 
 ##########
 ## Data ##
@@ -24,7 +24,7 @@ setwd("C:/GoogleDrive/Projects/Political Headlines/Political_Headlines_Project/c
 # Read Text Data
 datedata<-read.csv('./../../data/alldate_170420.csv')
 # Conduct Keitaiso Kaiseki (Isomorphic Analysis)
-MecabRes<-RMeCabDF(dataf=datedata,coln="Headline")
+MeCabRes<-RMeCabDF(dataf=datedata,coln="Headline")
 
 ## Save the result
 save.image("./../../data/polhead_RMeCab_170420.rda")
