@@ -40,6 +40,8 @@ Each Dataset comes with following variables:
 
  The following datasets are used to machine-learn the contents of newspaper headlines. **Rows represent headlines and columns represent words.**
 
+ NOTE: Text matrix datasets are VERY large files, so they are **not uploaded to GitHub**. Ask authors if you are interested in looking inside of data.
+
  ### 2.1 Datasets
 
  Each word appearnce matrix data has **identical row number as <code>id_all</code> variable** in corresponding headline data.
@@ -55,5 +57,3 @@ Each Dataset comes with following variables:
  **Each column represents word** (i.e., noun, adjective, verb, ...). The value indicates **the frequency of word appearance**. The value often takes 1 or 0, but not necessarily. ***If the same word appears twice (or more) in one headline, then the value takes 2 or more.*** You need to recode the variable if you want to use these variables as dummy word appearnce in headline.
 
  The dataset includes ALL words (except for signs (e.g., parentheses, dots, ...) and other meaningless terms) that **appeared at least once** in whole data. It may be inefficient to include all those variables in the analysis. We can set some threshold of minimum frequency of word appearance to shrink dataset.
-
- CAUTION: Text matrix datasets are VERY large files. It may take a while if you want to download them.

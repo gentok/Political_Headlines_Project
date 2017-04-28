@@ -120,9 +120,9 @@ write.csv(ldpdata,"./data_public/ldpdata.csv", row.names=FALSE)
 write.csv(politicsdata,"./data_public/politicsdata.csv", row.names=FALSE)
 
 ## Word Appearance Matirx Data (rows corresponding with headline level data)
-write.csv(cabinetWrdMat,"./data_public/cabinetWrdMat.csv", row.names=FALSE)
-write.csv(ldpWrdMat,"./data_public/ldpWrdMat.csv", row.names=FALSE)
-write.csv(politicsWrdMat,"./data_public/politicsWrdMat.csv", row.names=FALSE)
+write.csv(cabinetWrdMat,"../data/cabinetWrdMat.csv", row.names=FALSE)
+write.csv(ldpWrdMat,"../data/ldpWrdMat.csv", row.names=FALSE)
+write.csv(politicsWrdMat,"../data/politicsWrdMat.csv", row.names=FALSE)
 
 save(cabinetdata,ldpdata,politicsdata,cabinetWrdMat,ldpWrdMat,politicsWrdMat,
      file = "../data/polhead_subsetRMeCab_170427.rda")
