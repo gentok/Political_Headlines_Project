@@ -28,6 +28,6 @@ REM
 REM 
 echo on 
 
-"C:\Program Files (x86)\MeCab\bin\mecab-dict-index" -d "C:\Program Files (x86)\MeCab\dic\ipadic" -u user.dic -f shift-jis -t shift-jis user.csv 
+"C:\Program Files (x86)\MeCab\bin\mecab-dict-index" -d "C:\Program Files (x86)\MeCab\dic\ipadic" -u polword.dic -f shift-jis -t shift-jis polword.csv 
 
 pause

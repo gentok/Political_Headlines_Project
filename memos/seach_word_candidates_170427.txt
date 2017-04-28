@@ -1,0 +1,160 @@
+Searching Word List
+all words seached are registered in dictionary, 
+( ) not searched
+
+=== Cabinet ===
+
+ñ‘Š Prime Minister
+(ñ”]) National Head (Indicates foreign heads too)
+Š¯“@ PM & His Cabinet
+“àŠt Cabinet
+­Œ  administration
+
+­•{ government (often indicates cabinet)
+
+Št—» minister
+-- ‘Š -- minister (following)
+–@‘Š
+–@–±‘Š
+ŠO–±‘Š
+ŠO‘Š
+à–±‘Š
+à‘Š
+•¶‰È‘Š
+Œú˜J‘Š
+”_…‘Š
+”_‘Š
+ŒoY‘Š
+‘Œğ‘Š
+ŠÂ‹«‘Š
+–h‰q‘Š
+’·Š¯
+‘å‘ ‘Š
+‘ ‘Š
+Œú¶‘Š
+Œú‘Š
+‰^—A‘Š
+˜J“­‘Š
+˜J‘Š
+Œšİ‘Š
+•¶•”‘Š
+•¶‘Š
+Œú¶‘Š
+Œú‘Š
+©¡‘Š
+
+== Liberal Democratic Party ===
+
+©–¯ LDP
+©–¯“} LDP
+(©) LDP (Not seached. Too general)
+©Œö LDP & Komei
+©Ğ‚³ LDP, Socialist & Komei
+©Œö•Û LDP, Komei, Conservative
+
+‘Ù (LDP's) leader
+Š²–’· Chairman (often LDP)
+­’²‰ï’· LDP party Policy Research Council Chairman
+
+== Politics in general ===
+
+–¯åå‹` Democracy
+
+‘‰ï Diet
+O‰@ House of Representative
+O‹c‰@ HoR
+Q‰@ House of Councilors
+Q‹c‰@ HoC
+‘I‹“ Election
+’n•û‘I Local Election
+
+­¡ Politics
+
+(–@ˆÄ) Bill
+–@   Law
+
+“}   (political) party
+­“} political party
+—^“} Cabinet party
+–ì“} Opposition party
+V“} New party
+“}ñ Party leader
+
+˜A—§ Coalition
+
+‘ã‹cm Representative
+‹cˆõ Member of Diet
+
+’m– Prefectural Governor
+s’· Mayor
+
+“s‹c Member of Tokyo Metropolitan Assembly
+Œ§‹c Member of Prefectural Assembly
+s‹c Member of City Council
+’¬‹c Member of Town Council
+‘º‹c Member of Village Council
+
+s’¬‘º City, town and village
+©¡‘Ì Local government
+
+
+=== Below are for reference. Not Used for now ===
+
+(Party Names)
+
+(©EĞEŒöE–¯) Abbreviaton for LDP, Socialist, Komei and Democratic Party
+(ĞŒö–¯) Socialist, Komei and Deomcratic Party
+
+(Ğ“}) Socialist Party
+(‹¤Y“}) Communist party
+(–¯å) Democratic Party
+(–¯Ğ“}) Democratic Socialist party 
+(‚³‚«‚ª‚¯) Sakigake
+
+(Bureaucracy)
+
+(‘) Country (Government)
+
+(‘‰ÆŒö–±ˆõ) National Public Servant
+(Eˆõ) Officer
+(Š¯—») Bureaucrat
+(º’·) Office Chief
+(ŸŠ¯) Second Officer (Top of bureaucrat)
+
+(’ÊYÈ)
+(à–±È)
+(•¶‰ÈÈ)
+(‘å‘ )
+(Œú¶)
+(ŒšİÈ)
+(‰È‹Z’¡)
+(Œú˜JÈ)
+(Œú¶È)
+(˜J“­È)
+(Ğ•Û’¡)
+(–h‰q’¡)
+(‹à—Z’¡)
+(ŠO–±È)
+(—X­–‹Æ’¡)
+(Œx@’¡)
+(“¹˜HŒö’c)
+
+(Issue) 
+
+(Å) Tax
+(Å’²) Tax Committee
+(—Õ’²) Temporal Committee
+
+(’““ú) in Japan (ambassador)
+
+(ˆÀ•Û) National Security
+(Œ›–@) Constitution
+(”N‹à) Pention
+
+(cº“T”Í) Emperor's rule
+
+(—\Z) Budget
+(àŒ¹) Fincantial source
+(Œ£‹à) Contribution
+
+(–³“}”h) Non-partisan
