@@ -34,3 +34,7 @@ The project potentially answers following questions (or more).
  * *data_public*: Data description and storage for publicly available datasets
  * *memos*: Draft ideas and memos used on the way to develop project
  * *notebooks*: Jupyter notebook files to describe data and analytical tools
+
+## 6. License
+
+The result and paper of this project is licensed under the [Creative Commons Attribution 4.0 license](https://choosealicense.com/licenses/cc-by-4.0/), and the programming codes used to generate the result is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
