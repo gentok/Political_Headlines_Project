@@ -37,4 +37,4 @@ The project potentially answers following questions (or more).
 
 ## 6. License
 
-The analytical result in this project is licensed under the [Creative Commons Attribution 4.0 license](https://choosealicense.com/licenses/cc-by-4.0/), and the programming code used to generate the result is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
+The analytical result and data in this project are licensed under the [Creative Commons Attribution 4.0 license](https://choosealicense.com/licenses/cc-by-4.0/), and the programming code used to generate the result is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
