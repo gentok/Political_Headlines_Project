@@ -1,5 +1,5 @@
 ################################################################################# 
-## File Name: polhead_RMecab_170420.R                                          ##
+## File Name: polhead_allRMecab_170420.R                                       ##
 ## Date: 20 April 2017                                                         ##
 ## Author: Gento Kato                                                          ##
 ## Project: Political Headlines                                                ##
@@ -27,4 +27,4 @@ datedata<-read.csv('./../../data/alldate_170420.csv')
 MeCabRes<-RMeCabDF(dataf=datedata,coln="Headline")
 
 ## Save the result
-save.image("./../../data/polhead_RMeCab_170420.rda")
+save.image("./../../data/polhead_allRMeCab_170420.rda")
