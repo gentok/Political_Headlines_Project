@@ -1,15 +1,10 @@
-<text align="center">
- <h1> Exploring and Predicting Characteristics of Japanese Newspaper Headlines </h1>
-<h2> <i>STA208 Final Project (Spring 2017)</i> </h2>
- <h3> <i>Tzu-ping Liu and Gento Kato</i> </h3>
-</text>
+<h1 style="text-align:center"> Exploring and Predicting Characteristics of Japanese Newspaper Headlines </h1>
+ <h2 style="text-align:center"> <i>STA208 Final Project (Spring 2017)</i> </h2>
+ <h3 style="text-align:center"> <i>Tzu-ping Liu and Gento Kato</i> </h3>
+[<h5 style="text-align:center"> Back to Summary Notebook </h5>](Project_Summary_STA208.ipynb)
 
-[<p  style="text-align:right"> <i>Back to Summary Notebook</i> </p>](../notebooks/Project_Summary_STA208.ipynb)
-
-<text align="center">
-<h1> <i>Section II</i> </h1>
-<h1> Data of Japanese Newspaper Headlines </h1> 
-</text>
+<h1 style="text-align:center"> Section II </h1>
+<h1 style="text-align:center"> <i>Data of Japanese Newspaper Headlines</i> </h1>
 
 ## 1. Raw Headline Text Data <br>
 
