@@ -46,5 +46,5 @@ alldata$train[codeddata$sampleloc] <- 1
 ## Save Data ##
 ###############
 
-write.csv(alldata, "../data/alldata_traincode_170510.csv")
+write.csv(alldata, "../data/alldata_traincode_170510.csv", row.names = FALSE)
 

@@ -19,11 +19,11 @@ The project potentially answers following questions (or more).
 
  * ALL First page headlines from two major newspapers in Japan, collected from 1987 through 2015.
  * Monthly public opinion polls in Japan of the corresponding period.
- * Check more detailed descriptions from [HERE](https://github.com/gentok/Political_Headlines_Project/blob/master/data_public/DESCRIPTION.md).
+ * Check more detailed descriptions from [HERE](data_public/DESCRIPTION.md).
 
 ## 4. Analytical Strategy
 
- * Dictionary approach to extract political headlines (Tutorial from [HERE](https://github.com/gentok/Political_Headlines_Project/blob/master/notebooks/Headline%20Data%20and%20Text%20Search.ipynb))
+ * Dictionary approach to extract political headlines (Tutorial from [HERE](notebooks/Headline%20Data%20and%20Text%20Search.ipynb))
  * Unsupervised machine learning to categorize political news.
  * Supervised machine learning to code PN sentiments
  * Time-series analysis to assess the impact of news coverage on public opinion.

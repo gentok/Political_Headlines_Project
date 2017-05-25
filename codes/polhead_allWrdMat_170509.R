@@ -41,5 +41,6 @@ allWrdMat10 <- as.data.frame(t(allWrdMat10))
 
 ## Save the result
 saveRDS(allWrdMat10,"../data/allWrdMat10.rds")
-#write_csv(allWrdMat10, file=gzfile("../allWrdMat10.csv.gz"))
-write_csv(allWrdMat10, file.path("../", "allWrdMat10.csv.gz"))
+write.csv(allWrdMat10, file=gzfile("../data/allWrdMat10.csv.gz"), 
+          fileEncoding = "CP932", row.names = FALSE)
+#write_csv(allWrdMat10, file.path("../", "allWrdMat10.csv.gz"))
