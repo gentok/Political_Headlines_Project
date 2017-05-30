@@ -278,3 +278,32 @@ class MidpointNormalize(Normalize):
     def __call__(self, value, clip=None):
         x, y = [self.vmin, self.midpoint, self.vmax], [0, 0.5, 1]
         return np.ma.masked_array(np.interp(value, x, y))
+
+
+def class_simpred(X_all, X_train, y_train, clmod, n, startrand = 345):
+    """
+    Simulate and store predicted probabilities from classification methods.
+
+    Input: All design matrix, X_all,
+           training design matrix, X_train,
+           training response vector, y_train,
+           a classification model, clmod,
+           itereation number, n
+           Starting value for randomseed, startrand
+    Output: set of predicted probabilities (rows=cases, columns=simulationN), probyA
+    """
+    probyA = np.array([]).reshape(0,X_all.shape[0])
+    for i in range(n):
+        np.random.RandomState(i + startrand) # Set Random Seed
+        # Boot-strap Rows
+        bsrow = np.random.choice(range(X_train.shape[0]),X_train.shape[0],replace=True)
+        ## New Training Set
+        X_new = X_train[bsrow,:]; y_new = y_train[bsrow]
+        ## Fit Model on Training Data
+        clmod.fit(X_new,y_new)
+        # predicted all Y (for All y)
+        probyA_temp = clmod.predict_proba(X_all)[:,1]
+        probyA = np.vstack((probyA, probyA_temp))
+    probyA = probyA.transpose()
+    probyAav = np.mean(probyA, axis=1)
+    return probyAav, probyA

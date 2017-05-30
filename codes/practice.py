@@ -12,3 +12,9 @@ score_mat.shape
 for k in np.unique(values1):
     score_mat = np.vstack((score_mat, score[values1 == k]))
 score_mat
+
+X_train = np.vstack(([1,2,3],[4,5,6],[7,8,9],[10,11,12]))
+X_train
+bsrow = np.random.choice(range(X_train.shape[0]),X_train.shape[0],replace=True)
+bsrow
+X_train[bsrow,:] ## Train-Test Split
