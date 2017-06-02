@@ -99,7 +99,7 @@ def class_validation(X, y, clmod, score_method = 'Accuracy', val_method = 'KFold
            response vector, y,
            a classification model, clmod,
            score definition (Accuracy, AUC, ROC-AUC or PR-AUC), score_method = 'Accuracy' (default),
-           validation method (KFold, LeaveOneOut, HoldOut), val_method = 'KFold' (default),
+           validation method (KFold, LeaveOneOut, HoldOut, OOB), val_method = 'KFold' (default),
            multi-class classification or not (only for accuracy score), multi = False (default),
            k for K-fold, k = 5 (default),
            simulation random-number for K-fold and HoldOut, startrand = 3423 (default)
@@ -126,6 +126,7 @@ def class_validation(X, y, clmod, score_method = 'Accuracy', val_method = 'KFold
                 modaccu_temp = class_onestep_accu(X_train, y_train, X_test, y_test, clmod, multi)
                 ## Append Accuracy
                 modaccu = np.append(modaccu,modaccu_temp)
+                modaccuav = np.mean(modaccu)
         if val_method == 'LeaveOneOut': ## If Leave-one-out cross validation
             loo = LeaveOneOut()
             for train_index, test_index in loo.split(X):
@@ -135,6 +136,7 @@ def class_validation(X, y, clmod, score_method = 'Accuracy', val_method = 'KFold
                 modaccu_temp = class_onestep_accu(X_train, y_train, X_test, y_test, clmod, multi)
                 ## Append Accuracies
                 modaccu = np.append(modaccu,modaccu_temp)
+                modaccuav = np.mean(modaccu)
         if val_method == 'HoldOut': ## If --% hold-out validation
             for i in range(1, simuN+1):
                 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=testsize, random_state=i+(startrand-1))
@@ -142,9 +144,13 @@ def class_validation(X, y, clmod, score_method = 'Accuracy', val_method = 'KFold
                 modaccu_temp = class_onestep_accu(X_train, y_train, X_test, y_test, clmod, multi)
                 ## Append Accuracies
                 modaccu = np.append(modaccu,modaccu_temp)
+                modaccuav = np.mean(modaccu)
+        if val_method == 'OOB': ## If Out of Bag Error is Available
+            clmod.fit(X,y) ## Fit Model on Data
+            modaccuav = clmod.oob_score_  ## Extract Out-of-Bag Score
 
         ## Return Average Score from validation ##
-        return np.mean(modaccu)
+        return modaccuav
 
     if not score_method == 'Accuracy':
 
@@ -173,6 +179,8 @@ def class_validation(X, y, clmod, score_method = 'Accuracy', val_method = 'KFold
                 ## Append AUCs
                 modrocauc = np.append(modrocauc,modrocauc_temp)
                 modprauc = np.append(modprauc,modprauc_temp)
+        if val_method == 'OOB': ## If out-of-bag score validation
+            print "AUC Method is NOT applicable for OOB validation."
 
         ## Return Average Scores from validation ##
         if score_method == 'AUC':
@@ -193,7 +201,7 @@ def class_optparam(X, y, clmod, params, score_method = 'Accuracy', val_method = 
            a classification model, clmod,
            Set of tuning parameters in dict format (up to two parameters), params
            score definition (Accuracy, ROC-AUC or PR-AUC), score_method = 'Accuracy' (default),
-           validation method (KFold, LeaveOneOut, HoldOut), val_method = 'KFold' (default),
+           validation method (KFold, LeaveOneOut, HoldOut, OOB), val_method = 'KFold' (default),
            multi-class classification or not (only for accuracy score), multi = False (default),
            k for K-fold, k = 5 (default),
            test-set size in proportion for HoldOut, testsize = 0.5 (default),

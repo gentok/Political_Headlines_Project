@@ -18,3 +18,6 @@ X_train
 bsrow = np.random.choice(range(X_train.shape[0]),X_train.shape[0],replace=True)
 bsrow
 X_train[bsrow,:] ## Train-Test Split
+
+sample = [0.345]
+np.mean(sample)
